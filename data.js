@@ -151,6 +151,7 @@ function BRAND() {
 const Products_Computer = [
     {
         "category": "DESKTOP",
+        "harf" : "DESKTOP",
         "products": [
             { "name": "Asus NUC i3 1315U", "spec": "8GB / SSD 256GB", "price": "449.00", "image": "https://www.goldonecomputer.com/image/cache/catalog/GOC%20SR/2025/ASUS/NUC/RNUC13VYKI50006-1-200x200.jpg" },
             { "name": "Asus NUC i7 1260P", "spec": "16GB / SSD 512GB", "price": "719.00", "image": "https://www.goldonecomputer.com/image/cache/catalog/GOC%20SR/2025/ASUS/NUC/RNUC12WSHI70000-1-200x200.jpg" },
@@ -158,8 +159,9 @@ const Products_Computer = [
             { "name": "Asus NUC 11ATKPE0000", "spec": "8GB / SSD 256GB", "price": "269.00", "image": "https://www.goldonecomputer.com/image/cache/catalog/GOC%20SR/2025/ASUS/NUC/BNUC11ATKPE0000-1-200x200.jpg" }
         ]
     },
-    {
+    {   
         "category": "MACBOOK & LAPTOP",
+        "harf" : "MACBOOK",
         "products": [
             { "name": "MacBook Air 15", "spec": "M4 Chip / 16GB / SSD 512GB /15.2", "price": "1559.00", "image": "https://www.goldonecomputer.com/image/cache/catalog/GOC%20SR/2025/APPLE/Air/Mac-air-M4-15-Sky-Blue-1-200x200.jpg" },
             { "name": "MacBook Air 15", "spec": "M3 Chip / 16GB / SSD 256GB / 15", "price": "1359.00", "image": "https://www.goldonecomputer.com/image/cache/catalog/Products/APPLE%20LAPTOP/2023/Mac%20air%20/MacBook-Air-15-Space-Grey-200x200.jpg" },
@@ -187,6 +189,7 @@ const Products_Computer = [
     },
     {
         "category": "PC COMPONENTS",
+        "harf" : "PC_COMPONENTS",
         "products": [
             { "name": "FSP Hydro PTM PRO(ATX3.1)", "spec": "1650W Max Power 1600W", "price": "299.00", "image": "https://www.goldonecomputer.com/image/cache/catalog/Products/PSU/FSP1650W1-200x200.jpg" },
             { "name": "darkFlash PMT 850W ATX 3.1", "spec": "White 850W / Full Mo", "price": "79.00", "image": "https://www.goldonecomputer.com/image/cache/catalog/Products/PSU/PMT-White-750W-200x200.jpg" },
@@ -214,6 +217,7 @@ const Products_Computer = [
     },
     {
         "category": "AUDIO DEVICE",
+        "harf" : "Audio",
         "products": [
             { "name": "Razer Seiren V3 Mini USB", "spec": "Microphone", "price": "59.00", "image": "https://www.goldonecomputer.com/image/cache/catalog/Products/Gaming%20Gear/Gaming%20Headset/Razer-Seiren-V3-Mini-USB-Microphone-Condenser-Mic-200x200.jpg" },
             { "name": "Logitech H540 USB Headset", "spec": "Noise Cancelling", "price": "36.00", "image": "https://www.goldonecomputer.com/image/cache/catalog/Products/Audio%20Device/Headset/H540-200x200.jpg" },
@@ -232,6 +236,7 @@ const Products_Computer = [
     },
     {
         "category": "PRINTER AND SCANNER",
+        "harf" : "Printer",
         "products": [
             { "name": "HP Color LaserJet MFP M570DW A4", "spec": "Print, Copy, Scan", "price": "1029.00", "image": "https://www.goldonecomputer.com/image/cache/catalog/Products/HP%20Printer%20/M570DW-2-200x200.jpg" },
             { "name": "HP Color LaserJet MFP M283FDN A4", "spec": "Print, Copy, Scan", "price": "359.00", "image": "https://www.goldonecomputer.com/image/cache/catalog/Products/HP%20Printer%20/M283Fdw1-200x200.png" },
@@ -331,7 +336,7 @@ function Category_Computer() {
         const categoryNewCarts = newCarts.filter(cart => cart.category === category.category);
         return `
             <div class="mt-6">
-                <h2 id="${category.category.replace(/\s+/g, '-')}" class="text-lg font-semibold bg-yellow-500 text-white px-4 py-2 inline-block hover:scale-105 transition-all duration-300">${category.category}</h2>
+                <h2 id="${category.harf}" class="text-lg font-semibold bg-yellow-500 text-white px-4 py-2 inline-block hover:scale-105 transition-all duration-300">${category.category}</h2>
                 <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mt-4">
                     ${category.products.map(product => `
                         <div class="bg-white p-3 shadow-lg rounded-lg text-center hover:scale-105 transition-all duration-300">
