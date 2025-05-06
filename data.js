@@ -182,7 +182,7 @@ const Products_Computer = [
         "category": "MONITOR",
         "products": [
             { "name": "MSI PRO MP273U", "spec": '27" / 4K / IPS / 60Hz / 3 Years', "price": "199.00", "image": "https://www.goldonecomputer.com/image/cache/catalog/Products/Monitor%20MSI/PRO-MP273U-200x200.jpg" },
-            { "name": "Samsung Odyssey OLED", "spec": 'G6 G60SD (Pivot) 27" / OLED', "price": "910.00", "image": "https://imgs.search.brave.com/B0fWHlgbd42cieoa4LwltewDoibrAyyRVmGqMe3_z8s/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/ODFvcjFiNEVuZEwu/anBn" },
+            { "name": "Samsung Odyssey OLED", "spec": 'G6 G60SD (Pivot) 27" / OLED', "price": "910.00", "image": "https://www.goldonecomputer.com/image/cache/catalog/Products/Monitor%20Samsung/G6-OLED-240Hz-200x200.jpg" },
             { "name": "Samsung Essential Monitor", "spec": 'S3 (S30GD) 2025 24"', "price": "109.00", "image": "https://www.goldonecomputer.com/image/cache/catalog/Products/Monitor%20Samsung/S3-2025-200x200.jpg" },
             { "name": "Samsung Odyssey OLED G6", "spec": '(Pivot) 27" / OLED', "price": "699.00", "image": "https://www.goldonecomputer.com/image/cache/catalog/Products/Monitor%20Samsung/G6-OLED-240Hz-200x200.jpg" }
         ]
