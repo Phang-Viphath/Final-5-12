@@ -26,7 +26,7 @@
                 <button id="search-button" class="bg-yellow-500 px-5 py-2 text-white">SEARCH</button>
             </div>
         
-            <div id="modal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
+            <div id="modal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50 px-4">
                 <div class="bg-white p-6 rounded-lg w-96 relative">
                     <button id="close-modal" class="absolute top-2 right-2 text-gray-500 hover:text-red-500">✖</button>
                     <h2 class="text-xl font-bold mb-2">Search Results</h2>
@@ -45,7 +45,7 @@
                 </div>
             </div>
 
-            <div id="cart-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden">
+            <div id="cart-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden px-4">
                 <div class="bg-white rounded-lg p-6 w-full max-w-lg max-h-[80vh] overflow-y-auto">
                     <div class="flex justify-between items-center mb-4">
                         <h2 class="text-xl font-semibold">Your Cart</h2>
@@ -62,7 +62,7 @@
                 </div>
             </div>
 
-            <div id="view-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden">
+            <div id="view-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden px-4">
                 <div class="bg-white rounded-lg p-6 w-full max-w-md">
                     <div class="flex justify-between items-center mb-4">
                         <h2 class="text-xl font-semibold">Product Details</h2>
@@ -225,7 +225,7 @@
         </div>
 
         <button class="fixed bottom-6 right-6 bg-yellow-500 text-white px-4 py-3 rounded-full shadow-lg flex items-center">
-            <i class="bi bi-chat-left-text me-2"></i> Chat with us
+            <a href="https://t.me/PHANG_VIPHATH"><i class="bi bi-chat-left-text me-2"></i>Chat with us</a>
         </button>
 
         <script>
@@ -251,7 +251,7 @@
                 <div id="category-computer">
                     <!-- code -->
                 </div>
-                <div id="new-cart-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
+                <div id="new-cart-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50 px-4">
                     <div class="bg-white rounded-lg p-6 w-full max-w-md">
                         <div class="flex justify-between items-center mb-4">
                             <h2 class="text-xl font-semibold">Create New Cart</h2>
@@ -292,9 +292,6 @@
                 </div>
             </div>
         </div>
-        <button class="fixed bottom-6 right-6 bg-yellow-500 text-white px-4 py-3 rounded-full shadow-lg flex items-center hover:scale-105 transition-all duration-300">
-            <a href="https://t.me/PHANG_VIPHATH">💬 Chat with us</a>
-        </button>
     </main>
     <footer class="bg-gray-800 text-white flex flex-wrap md:justify-around justify-between py-8 border-t-4 border-yellow-500 mt-7 px-4 md:px-16">
         <ul class="space-y-2 mb-4">
